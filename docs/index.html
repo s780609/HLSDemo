@@ -21,13 +21,13 @@
 
             hls.on(Hls.Events.MEDIA_ATTACHED, function () {
                 console.log("video and hls.js are now bound together !");
-                hls.loadSource("https://github.com/s780609/HLSDemo/blob/master/docs/master.m3u8");
+                hls.loadSource("./master.m3u8");
             });
 
         }
         else {
             const video = document.getElementById('video');
-            video.src = "https://github.com/s780609/HLSDemo/blob/master/docs/master.m3u8"
+            video.src = "./master.m3u8"
         }
     </script>
 </body>
